@@ -8,7 +8,7 @@ It exposes REST endpoints to:
 3.Capture the payment after approval
 4.Return final payment status to the client application
 
-This service acts as a middleware between your application (UI / another backend service) and PayPal REST APIs.
+This service acts as a middleware between your application (UI / another backend service) and PayPal REST APIs and Implemented Caching in order to store the token and improved the performance.
 
 **Tech Stack**
 
@@ -18,6 +18,7 @@ PayPal REST APIs (v2/checkout/orders)
 Maven
 JSON (Jackson ObjectMapper)
 GlobalExceptionhandler
+Redis Caching
 
 **1. Create Order Flow
 **
